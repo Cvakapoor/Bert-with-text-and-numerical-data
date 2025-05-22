@@ -58,3 +58,8 @@ graph LR
   Tabular --> Concat
   Concat --> Dense --> Output
 ```
+- **Pretrained model**: bert-base-uncased (HuggingFace)
+- **Final classification head**: [128 → Dropout → 64 → Sigmoid]
+- Optimized using **TensorFlow's Keras API**
+
+---
