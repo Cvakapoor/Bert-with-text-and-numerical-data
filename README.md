@@ -63,3 +63,28 @@ graph LR
 - Optimized using **TensorFlow's Keras API**
 
 ---
+
+## 🚀 Highlights
+- ✅ Multimodal fusion of text and numerical features
+- ✅ TensorFlow-based implementation
+- ✅ Improved classification accuracy over text-only models
+
+---
+
+## 🧠 Training Setup
+- Framework: TensorFlow 2.x
+- Optimizer: Adam
+- Loss: Binary Crossentropy
+- Metrics: Accuracy, AUC, Precision, Recall
+- Batch size: 32
+- Epochs: 20
+
+---
+
+## 📈 Evaluation
+Evaluated on a validation split (25% of training data):
+- Accuracy
+- AUC
+- Precision / Recall
+- Training/validation loss curves
+- Confusion matrix & classification report
