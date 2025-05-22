@@ -41,12 +41,20 @@ Given a dataset of web articles with structured metadata and unstructured text (
 
 ### 🔗 **Multimodal BERT Classifier**
 
-Combines:
+#### Combines:
 - **BERT-based embeddings** for textual data
 - **Dense network layers** for numerical features (after PCA)
 
-```text
-[Text (BERT)] ---> [GlobalAvgPool] --->|
-                                       |--> [Concat] --> [Dense Layers] --> Output
-[Tabular PCA Data] ------------------->|
+```mermaid
+graph LR
+  BERT[Text - BERT]
+  Pool[GlobalAvgPool]
+  Tabular[Tabular PCA Data]
+  Concat[Concat]
+  Dense[Dense Layers]
+  Output[Output]
+
+  BERT --> Pool --> Concat
+  Tabular --> Concat
+  Concat --> Dense --> Output
 ```
